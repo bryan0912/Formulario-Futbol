@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Formulario de incripcíon</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Formulario de servicio sobre la escuela de futbol "El Barto" </h1>
+      <p id="description" class="description text-center">
+        Gracias por tomarte el tiempo de responder el cuestionario.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nombre</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="ingresa tu nombre"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Ingresa tu Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Edad<span class="clue"></span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Edad"
+        />
+      </div>
+      <div class="form-group">
+        <p>Con cual posicion te sientes más identificado</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>selecciona tu posicíon</option>
+          <option value="Defensa">Defensa</option>
+          <option value="arquero">Arquero</option>
+          <option value="lateral">Lateral</option>
+          <option value="volante">Volante</option>
+          <option value="delantero">Delantero</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>¿Recomendarias Nuestra escuela a tus amigos?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="Definitivamente"
+            type="radio"
+            class="input-radio"
+            checked
+          />Definitivamente</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="quizas"
+            type="radio"
+            class="input-radio"
+          />Quizás</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="nunca"
+            type="radio"
+            class="input-radio"
+          />Nunca</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          ¿Cuál es tu jugador de futbol favorito?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Selecciona una opcíon</option>
+          <option value="messi">Leonel Messi</option>
+          <option value="neimar">Neymar</option>
+          <option value="cristiano">Ronaldo</option>
+          <option value="mbappe">Mbappe</option>
+          
+
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          ¿Que te gustaria ver en nuestra escuela?
+          <span class="clue">(Marca las que quieras)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="Mejores maestros"
+            type="checkbox"
+            class="input-checkbox"
+          />Mejores maestros</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="más utensilios de trabajo"
+            type="checkbox"
+            class="input-checkbox"
+          />Más utensilios de trabajo</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="mejores canchas"
+            type="checkbox"
+            class="input-checkbox"
+          />Mejores canchas</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="premios "
+            type="checkbox"
+            class="input-checkbox"
+          />premios</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="horarios"
+            type="checkbox"
+            class="input-checkbox"
+          />Horarios</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="torneos"
+            type="checkbox"
+            class="input-checkbox"
+          />Mejores torneos</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Salidas-de-campo"
+            type="checkbox"
+            class="input-checkbox"
+          />Salidad de campo</label
+        >
+        
+        <label
+          ><input
+            name="prefer"
+            value="mas-cupos"
+            type="checkbox"
+            class="input-checkbox"
+          />Más cupos</label
+        >
+        
+      </div>
+  
+      <div class="form-group">
+        <p> Algún comentario o sugerencia?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Ingresa tu comentario aqui."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
